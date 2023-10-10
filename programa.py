@@ -1,7 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QComboBox, QTextEdit
-
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
+from PyQt5.QtCore import Qt 
 
 app = QApplication(sys.argv)
 
@@ -20,7 +19,10 @@ combo_box.addItem("Todos los juegos")
 combo_box.setGeometry(0, 0, 400, 30)
 
 #deshabilitar el placeholder
+combo_box.setItemData(0, 0, role=Qt.UserRole - 1)
 
+# Establecer la opción predeterminada seleccionada en el índice 0
+combo_box.setCurrentIndex(0)
 
 # Crear un area de texto
 text_area= QTextEdit(window)
