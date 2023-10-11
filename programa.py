@@ -55,8 +55,4 @@ def compruebaOpcion(opcion_seleccionada):
     elif opcion_seleccionada == "Todos los juegos":
         params = {}
 
-
-
-
-
 ventana()
