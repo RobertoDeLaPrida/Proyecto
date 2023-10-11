@@ -31,7 +31,19 @@ def ventana():
     text_area.setGeometry(400, 0, 620, 600)
     text_area.setDisabled(True)
 
+    # Conectar el combo a la otra funcion
+
     # Mostrar la ventana
     window.show()
     sys.exit(app.exec_())
 
+
+def obtener_datos_desde_api(opcion_seleccionada):
+    if opcion_seleccionada == "Top 100 juegos con mas jugadores en estas 2 semanas":
+        pass 
+    elif opcion_seleccionada == "Top 100 juegos con mas jugadores desde el principio":
+        pass  
+    elif opcion_seleccionada == "Top 100 juegos mas vendidos":
+        pass  
+    elif opcion_seleccionada == "Todos los juegos":
+        pass
