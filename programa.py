@@ -38,12 +38,25 @@ def ventana():
     sys.exit(app.exec_())
 
 
-def obtener_datos_desde_api(opcion_seleccionada):
+
+def compruebaOpcion(opcion_seleccionada):
     if opcion_seleccionada == "Top 100 juegos con mas jugadores en estas 2 semanas":
-        pass 
+        params = {
+    'request': 'top100in2weeks'
+}
     elif opcion_seleccionada == "Top 100 juegos con mas jugadores desde el principio":
-        pass  
+        params = {
+            'request':'top100forever'
+        }
     elif opcion_seleccionada == "Top 100 juegos mas vendidos":
-        pass  
+        params = {
+            'request':''
+        }
     elif opcion_seleccionada == "Todos los juegos":
-        pass
+        params = {}
+
+
+
+
+
+ventana()
