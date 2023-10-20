@@ -7,9 +7,8 @@ Este programa requiere del uso de diferentes bibliotecas, para causar los menore
 En este archivo 'requirements.txt' contiene todas las bibliotecas necesarias y usadas en este programa.
 
 Se debe de usar una api no oficial ya que la propia proveeida por Steam solo proporciona 
-"appid" y "name" es decir el ID de el juego/aplicacion y su nombre.
+"appid" y "name" es decir el ID de el juego/aplicacion y su nombre, ya que esa informacion no es suficiente para lo que buscamos con el programa.
 
 Como en este programa se busca procesar una informacion mayor que simplemente el nombre y la id, he usado la api SteamSpy, que proporciona mayor alcance de datos
 como puede ser, las ventas, el numero de jugadores, los precios, etc...
 
-También se proporciona una barra de busqueda por si se desea buscar un juego en concreto.
